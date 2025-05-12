@@ -1,0 +1,29 @@
+# Portfolio (2025)
+_Description to be added later._
+
+## Table of Contents
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Installation Instructions](#installation-instructions)
+  - [Usage](#usage)
+- [Screenshots](#screenshots)
+
+## Getting Started
+### Requirements
+Before you begin, be sure you have the most recent versions of `node` and `npm` installed.
+
+### Installation Instructions
+1. Clone the repo:
+```
+git clone https://github.com/paulstgermain/portfolio.git
+```
+2. Install packages:
+```
+npm install
+```
+3. _...Installation instructions to run app locally will go here._
+
+### Usage
+_Usage instructions for operating the website or app will go here._
+
+## Screenshots
