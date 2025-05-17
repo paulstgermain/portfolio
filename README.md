@@ -6,6 +6,7 @@ _Description to be added later._
   - [Requirements](#requirements)
   - [Installation Instructions](#installation-instructions)
   - [Usage](#usage)
+- [Resources](#resources)
 - [Screenshots](#screenshots)
 
 ## Getting Started
@@ -25,5 +26,8 @@ npm install
 
 ### Usage
 _Usage instructions for operating the website or app will go here._
+
+## Resources
+- [Design Doc](https://www.figma.com/design/4ey5VvGdRefWQcoghm5UnM/Untitled?node-id=0-1&t=wA6mWcDlSHSPM5E3-1)
 
 ## Screenshots
