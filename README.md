@@ -1,5 +1,11 @@
 # Portfolio (2025)
 _Description to be added later._
+### Building With:
+- Next.js
+- TypeScript
+- Tailwind
+- GSAP
+- @next/mdx
 
 ## Table of Contents
 - [Getting Started](#getting-started)
