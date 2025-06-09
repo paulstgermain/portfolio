@@ -1,15 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Chakra_Petch, Bungee, Istok_Web } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakra-petch",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  style: ["normal", "italic"],
+  fallback: ["sans-serif"],
+  preload: true,
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const bungee = Bungee({
+  variable: "--font-bungee",
   subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  style: ["normal"],
+  fallback: ["cursive"],
+  preload: true,
+});
+
+const istokWeb = Istok_Web({
+  variable: "--font-istok-web",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  style: ["normal", "italic"],
+  fallback: ["serif"],
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -25,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${chakraPetch.variable} ${bungee.variable} ${istokWeb.variable} antialiased`}
       >
         {children}
       </body>
