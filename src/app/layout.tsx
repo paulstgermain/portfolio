@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Chakra_Petch, Bungee, Istok_Web } from "next/font/google";
+import LayoutWrapper from "./layoutWrapper";
 import "./globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -51,9 +52,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${chakraPetch.variable} ${bungee.variable} ${istokWeb.variable} antialiased`}
+        className={`${bungee.variable} ${istokWeb.variable} antialiased`}
       >
-        {children}
+        <LayoutWrapper>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );
