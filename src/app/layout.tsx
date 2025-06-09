@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bungee.variable} ${istokWeb.variable} antialiased`}
+        className={`antialiased`}
       >
         <LayoutWrapper>
           {children}
