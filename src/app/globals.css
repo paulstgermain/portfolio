@@ -9,10 +9,13 @@
   --color-background: #ffffff;
   --color-foreground: #171717;
   --color-home: #191D0E;
+  --color-homenav: #274E82;
+  --color-homenav-alt: #A53860;
   --color-about: #0E1D1D;
   --color-projects: #1D1D0E;
   --color-blog: #1D0E1A;
   --color-contact: #121D0E;
+  --color-primary: #E0D230;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-chakra-petch: 'Chakra Petch', sans-serif;
