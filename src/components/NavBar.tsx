@@ -6,7 +6,7 @@ interface NavBarProps {
 }
 export default function NavBar({bgClass, altBgClass}: NavBarProps) {
   return (
-    <nav className={`w-15/16 h-11 sm:h-16 md:h-20 lg:h-22 ${bgClass} rounded-[40px] mx-auto pl-12 pr-12 relative top-4 flex items-center justify-between shadow-[8px_10px_0_0] ${altBgClass}`}>
+    <div className={`w-15/16 h-11 sm:h-16 md:h-20 lg:h-22 ${bgClass} rounded-[40px] mx-auto pl-12 pr-12 relative top-4 flex items-center justify-between shadow-[8px_10px_0_0] ${altBgClass}`}>
       <div className="flex-shrink-0">
       <Image
         src="/svgs/music_note.svg"
@@ -17,6 +17,6 @@ export default function NavBar({bgClass, altBgClass}: NavBarProps) {
       />
       </div>
       <p className="text-primary text-1xl md:text-4xl sm:text-2xl font-bungee select-none">Paul St.Germain</p>
-    </nav>
+    </div>
   )
 }
