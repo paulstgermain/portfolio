@@ -59,7 +59,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
     <div className={`transition-colors duration-300 ease-in-out ${backgroundClass} min-h-screen`}>
       <NavBar bgClass={navBgClass} altBgClass={navAltBgClass} />
       {children}
-      <BottomNav bgClass={bottomNavBgClass} />
+      <BottomNav bgClass={bottomNavBgClass} altBgClass={navBgClass} pathname={pathname} />
     </div>
   );
 }

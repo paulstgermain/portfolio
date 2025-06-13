@@ -1,26 +1,31 @@
 import Image from "next/image";
+import Link from "next/link";
 interface BottomNavProps {
   bgClass: string;
+  pathname: string;
+  altBgClass: string;
 }
 
 const navItems = [
-  { href: "/", src: "/svgs/home.svg", alt: "Home Icon" },
-  { href: "/about", src: "/svgs/about.svg", alt: "About Icon" },
-  { href: "/projects", src: "/svgs/projects.svg", alt: "Projects Icon" },
-  // { href: "/blog", src: "/svgs/blog.svg", alt: "Blog Icon" },
-  { href: "/contact", src: "/svgs/contact.svg", alt: "Contact Icon" },
+  { href: "/", src: "/svgs/home.svg", alt: "Home Icon", label: "Home" },
+  { href: "/about", src: "/svgs/about.svg", alt: "About Icon", label: "About" },
+  { href: "/projects", src: "/svgs/projects.svg", alt: "Projects Icon", label: "Projects" },
+  // { href: "/blog", src: "/svgs/blog.svg", alt: "Blog Icon", label: "Blog" },
+  { href: "/contact", src: "/svgs/contact.svg", alt: "Contact Icon", label: "Contact" },
 ]
 
-export default function BottomNav({bgClass}: BottomNavProps) {
+export default function BottomNav({bgClass, pathname, altBgClass}: BottomNavProps) {
   return (
     <nav className={`w-15/16 h-11 sm:h-16 md:h-20 lg:h-22 ${bgClass} rounded-[40px] mx-auto pl-12 pr-12 absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-colors duration-300 ease-in-out`}>
       <div className="flex items-center space-evenly h-full w-2/5 justify-between">
-          {navItems.map(({ href, src, alt }) => {
+          {navItems.map(({ href, src, alt, label }) => {
+            const isActive = pathname === href;
+
             return (
-              <a
+              <Link
                 key={href}
                 href={href}
-                className="flex items-center justify-center w-full h-full"
+                className="flex flex-col items-center justify-center group"
               >
                 <Image
                   src={src}
@@ -29,7 +34,9 @@ export default function BottomNav({bgClass}: BottomNavProps) {
                   height={25}
                   className="w-[20px] h-[21px] sm:w-[24px] sm:h-[25px] md:w-[38px] md:h-[37px]"
                 />
-              </a>
+                <span className={`absolute -top-7 text-xs text-primary ${altBgClass} bg-opacity-80 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}>{label}</ span>
+                <span className={`mt-1 w-2 h-2 rounded-full bg-primary transform transition-all duration-300 ease-in-out ${isActive ? "scale-100 opacity-100" : "scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-60"}`} />
+              </Link>
             );
           })}
       </div>
