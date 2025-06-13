@@ -10,6 +10,8 @@ export default function Home() {
           alt="Next.js logo"
           width={180}
           height={38}
+          // make teh svg color red
+          // style={{  }}
           priority
         />
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
