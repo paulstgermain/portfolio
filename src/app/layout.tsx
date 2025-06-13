@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Chakra_Petch, Bungee, Istok_Web } from "next/font/google";
 import LayoutWrapper from "./layoutWrapper";
-import NavBar from "@/components/NavBar";
 import "./globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -54,7 +53,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body
-        className={`antialiased`}
+        className={`antialiased ${chakraPetch.variable} ${bungee.variable} ${istokWeb.variable} font-sans bg-background text-foreground`}
       >
         <LayoutWrapper>
           {children}
