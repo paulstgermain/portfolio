@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import "@/app/globals.css";
 import NavBar from "@/components/NavBar";
+import BottomNav from "@/components/BottomNav";
 
 const backgroundByPathname: Record<string, string> = {
   "/": "bg-home",
@@ -29,11 +30,20 @@ const navAltBgByPathname: Record<string, string> = {
   "*": "shadow-foreground",
 };
 
+const bottomNavBgByPathname: Record<string, string> = {
+  "/": "bg-homenav-alt",
+  "/about": "bg-aboutnav-alt",
+  "/projects": "bg-projectsnav-alt",
+  "/contact": "bg-contactnav-alt",
+  "*": "bg-foreground-alt",
+};
+
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [backgroundClass, setBackgroundClass] = useState(backgroundByPathname["*"]);
   const [navBgClass, setNavBgClass] = useState(navBgByPathname["*"]);
   const [navAltBgClass, setNavAltBgClass] = useState(navAltBgByPathname["*"]);
+  const [bottomNavBgClass, setBottomNavBgClass] = useState(bottomNavBgByPathname["*"]);
 
   useEffect(() => {
     const bgClass = backgroundByPathname[pathname] || backgroundByPathname["*"];
@@ -42,12 +52,14 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
     setBackgroundClass(bgClass);
     setNavBgClass(navClass);
     setNavAltBgClass(navAltClass);
+    setBottomNavBgClass(bottomNavBgByPathname[pathname] || bottomNavBgByPathname["*"]);
   }, [pathname]);
 
   return (
     <div className={`transition-colors duration-300 ease-in-out ${backgroundClass} min-h-screen`}>
       <NavBar bgClass={navBgClass} altBgClass={navAltBgClass} />
       {children}
+      <BottomNav bgClass={bottomNavBgClass} altBgClass={navBgClass} pathname={pathname} />
     </div>
   );
 }
