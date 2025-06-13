@@ -1,8 +1,13 @@
 import Image from 'next/image';
 
-export default function NavBar() {
+interface NavBarProps {
+  bgClass: string;
+  altBgClass: string;
+}
+
+export default function NavBar({bgClass, altBgClass}: NavBarProps) {
   return (
-    <nav className="w-15/16 h-22 bg-homenav rounded-[40px] mx-auto pl-12 pr-12 relative top-4 flex items-center justify-between shadow-[8px_10px_0_0_#9d3256]">
+    <nav className={`w-15/16 h-22 ${bgClass} rounded-[40px] mx-auto pl-12 pr-12 relative top-4 flex items-center justify-between shadow-[8px_10px_0_0] ${altBgClass}`}>
       <Image
         height={37}
         width={38}
