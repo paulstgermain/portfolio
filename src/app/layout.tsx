@@ -56,7 +56,6 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <LayoutWrapper>
-          <NavBar />
           {children}
         </LayoutWrapper>
       </body>

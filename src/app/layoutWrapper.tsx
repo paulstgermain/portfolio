@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import "@/app/globals.css";
+import NavBar from "@/components/NavBar";
 
 const backgroundByPathname: Record<string, string> = {
   "/": "bg-home",
@@ -23,6 +24,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
 
   return (
     <div className={`transition-colors duration-300 ease-in-out ${backgroundClass} min-h-screen`}>
+      <NavBar />
       {children}
     </div>
   );
