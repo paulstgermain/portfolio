@@ -9,7 +9,7 @@ export default function NavBar() {
         src="/svgs/music_note.svg"
         alt="Music Note Icon"
       />
-      <p className="text-primary text-4xl font-bungee">Paul St.Germain</p>
+      <p className="text-primary text-4xl font-bungee select-none">Paul St.Germain</p>
     </nav>
   )
 }
