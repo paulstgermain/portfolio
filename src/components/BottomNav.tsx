@@ -30,10 +30,14 @@ export default function BottomNav({bgClass, pathname, altBgClass}: BottomNavProp
                 <Image
                   src={src}
                   alt={alt}
+                  aria-hidden="true"
                   width={24}
                   height={25}
                   className="w-[20px] h-[21px] sm:w-[24px] sm:h-[25px] md:w-[38px] md:h-[37px]"
                 />
+                {/* Screen reader alt text */}
+                <span className="sr-only">{alt}</span>
+                {/* Visible label on hover */}
                 <span className={`absolute -top-7 text-xs text-primary ${altBgClass} bg-opacity-80 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}>{label}</ span>
                 <span className={`mt-1 w-2 h-2 rounded-full bg-primary transform transition-all duration-300 ease-in-out ${isActive ? "scale-100 opacity-100" : "scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-60"}`} />
               </Link>
