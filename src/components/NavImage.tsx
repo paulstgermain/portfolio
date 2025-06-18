@@ -6,53 +6,56 @@ const imageSettingsByPathname: Record<string, any> = {
     alt: "Home Image",
     className: "",
     position: "",
-    shadowColor: ""
+    shadow: ""
   },
   "/about": {
     src: "/imgs/trees.png",
     alt: "About Image",
     className: "",
-    position: "",
-    shadowColor: ""
+    position: "absolute bottom-11 right-12",
+    shadow: "shadow-aboutnav-alt shadow-[8px_10px_0_0]"
   },
   "/projects": {
     src: "/imgs/buildings.png",
     alt: "Projects Image",
     className: "",
-    position: "",
-    shadowColor: ""
+    position: "absolute bottom-11 right-12",
+    shadow: "shadow-projectsnav-alt shadow-[8px_10px_0_0]"
   },
   "/blog": {
     src: "/imgs/paper.png",
     alt: "Blog Image",
     className: "",
-    position: "",
-    shadowColor: ""
+    position: "absolute bottom-11 right-12",
+    shadow: "shadow-blognav-alt shadow-[8px_10px_0_0]"
   },
   "/contact": {
     src: "/imgs/bust.png",
     alt: "Contact Image",
     className: "",
-    position: "",
-    shadowColor: ""
+    position: "absolute bottom-25 left-12",
+    shadow: "shadow-contactnav-alt shadow-[-8px_10px_0_0]"
   },
 }
 
 export default function NavImage({ pathname }: { pathname: string }) {
   const config = imageSettingsByPathname[pathname];
   if (!config) return null;
-  const { src, alt, className, position, shadowColor } = config;
+  const { src, alt, className, position, shadow } = config;
 
   return (
     <>
-    {src &&
-      <Image
-        src={src}
-        alt={alt}
-        width={500}
-        height={500}
-      />
-    }
+      <div className={`${position} rounded-[40px] ${shadow} z-2`}>
+        {src &&
+          <Image
+            src={src}
+            alt={alt}
+            width={500}
+            height={500}
+            className={"rounded-[inherit]"}
+          />
+        }
+      </div>
     </>
   );
 }
