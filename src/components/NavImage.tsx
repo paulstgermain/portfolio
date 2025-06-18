@@ -11,41 +11,105 @@ const imageSettingsByPathname: Record<string, any> = {
   "/about": {
     src: "/imgs/trees.png",
     alt: "About page image",
-    className: "w-135 h-90 [clip-path:polygon(46%_0%,100%_0%,100%_100%,-20%_100%)]",
+    className: `
+      w-58 h-40
+      sm:w-85 sm:h-58
+      md:w-90 md:h-60
+      lg:w-135 lg:h-90
+      [clip-path:polygon(46%_0%,100%_0%,100%_100%,-20%_100%)]
+    `,
     text: "About Me",
-    position: "absolute bottom-8 right-2",
+    textClasses: `
+      bottom-8 right-12
+      text-2xl
+      sm:text-3xl
+      md:text-4xl
+    `,
+    position: `
+      absolute
+      bottom-3 right-2
+      sm:bottom-3 sm:right-2
+      md:bottom-5 md:right-2
+      lg:bottom-7 lg:right-2
+    `,
     shadow: "shadow-aboutnav-alt shadow-[8px_10px_0_0]"
   },
   "/projects": {
     src: "/imgs/buildings.png",
     alt: "Projects page image",
-    className: "w-75 h-165",
+    className: `
+      w-50 h-140
+      sm:w-50 sm:h-140
+      md:w-60 md:h-150
+      lg:w-75 lg:h-165
+    `,
     text: "Projects",
-    position: "absolute bottom-8 right-2",
+    textClasses: `
+      bottom-8 right-8
+      sm:bottom-8 sm:right-4
+      md:bottom-8 md:right-6
+      lg:bottom-8 lg:right-12
+      text-2xl
+      sm:text-3xl
+      md:text-4xl
+    `,
+    position: `
+      absolute
+      bottom-3 right-2
+      sm:bottom-4 sm:right-2
+      md:bottom-5 md:right-2
+      lg:bottom-8 lg:right-2
+    `,
     shadow: "shadow-projectsnav-alt shadow-[8px_10px_0_0]"
   },
   "/blog": {
     src: "/imgs/paper.png",
     alt: "Blog page image",
-    className: "w-150 h-45",
+    className: `
+      w-150 h-45
+    `,
     text: "Blog",
-    position: "absolute bottom-8 right-2",
+    textClasses: `
+      bottom-8 right-12
+      text-4xl
+    `,
+    position: `
+      absolute
+      bottom-8 right-2
+    `,
     shadow: "shadow-blognav-alt shadow-[8px_10px_0_0]"
   },
   "/contact": {
     src: "/imgs/bust.png",
     alt: "Contact page image",
-    className: "w-130 h-90",
+    className: `
+      w-62 h-54
+      sm:w-84 sm:h-72
+      md:w-102 md:h-82
+      lg:w-130 lg:h-90
+    `,
     text: "Contact",
-    position: "absolute bottom-20 left-2",
+    textClasses: `
+      bottom-8 right-12
+      text-2xl
+      sm:text-3xl
+      md:text-4xl
+    `,
+    position: `
+      absolute
+      bottom-12 left-2
+      sm:bottom-15 sm:left-2
+      md:bottom-19 md:left-2
+      lg:bottom-20 lg:left-2
+    `,
     shadow: "shadow-contactnav-alt shadow-[-8px_10px_0_0]"
-  },
+  }
 }
 
 export default function NavImage({ pathname }: { pathname: string }) {
   const config = imageSettingsByPathname[pathname];
   if (!config) return null;
-  const { src, alt, className, text, position, shadow } = config;
+  const { src, alt, className, text, textClasses, position, shadow } = config;
 
   return (
     <>
@@ -60,7 +124,7 @@ export default function NavImage({ pathname }: { pathname: string }) {
               className={"rounded-[inherit]"}
             />
           }
-          <div className="absolute bottom-8 right-12 text-primary font-bungee text-4xl select-none">{text}</div>
+          <div className={`absolute text-primary font-bungee ${textClasses} select-none transition-all duration-250 ease-in-out`}>{text}</div>
         </div>
       </div>
     </>
