@@ -9,7 +9,7 @@ const imageSettingsByPathname: Record<string, any> = {
     shadow: ""
   },
   "/about": {
-    src: "/imgs/trees.png",
+    src: "/imgs/trees.webp",
     alt: "About page image",
     className: `
       w-58 h-40
@@ -35,7 +35,7 @@ const imageSettingsByPathname: Record<string, any> = {
     shadow: "shadow-aboutnav-alt shadow-[8px_10px_0_0]"
   },
   "/projects": {
-    src: "/imgs/buildings.png",
+    src: "/imgs/buildings.webp",
     alt: "Projects page image",
     className: `
       w-50 h-140
@@ -63,7 +63,7 @@ const imageSettingsByPathname: Record<string, any> = {
     shadow: "shadow-projectsnav-alt shadow-[8px_10px_0_0]"
   },
   "/blog": {
-    src: "/imgs/paper.png",
+    src: "/imgs/paper.webp",
     alt: "Blog page image",
     className: `
       w-150 h-45
@@ -80,7 +80,7 @@ const imageSettingsByPathname: Record<string, any> = {
     shadow: "shadow-blognav-alt shadow-[8px_10px_0_0]"
   },
   "/contact": {
-    src: "/imgs/bust.png",
+    src: "/imgs/bust.webp",
     alt: "Contact page image",
     className: `
       w-62 h-54
