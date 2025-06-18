@@ -45,7 +45,7 @@ export default function NavImage({ pathname }: { pathname: string }) {
 
   return (
     <>
-      <div className={`${position} rounded-[40px] ${shadow} z-2`}>
+      <div className={`${position} rounded-[40px] ${shadow} z-2 transition-all duration-250 ease-in-out`}>
         {src &&
           <Image
             src={src}
