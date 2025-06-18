@@ -1,37 +1,36 @@
-
+import Image from "next/image";
 
 // Set up object to map pathnames to image src, alt text, unique styles/classes
 const imageSettingsByPathname: Record<string, any> = {
   "/": {
-    src: "",
     alt: "Home Image",
     className: "",
     position: "",
     shadowColor: ""
   },
   "/about": {
-    src: "",
+    src: "/imgs/trees.png",
     alt: "About Image",
     className: "",
     position: "",
     shadowColor: ""
   },
   "/projects": {
-    src: "",
+    src: "/imgs/buildings.png",
     alt: "Projects Image",
     className: "",
     position: "",
     shadowColor: ""
   },
   "/blog": {
-    src: "",
+    src: "/imgs/paper.png",
     alt: "Blog Image",
     className: "",
     position: "",
     shadowColor: ""
   },
   "/contact": {
-    src: "",
+    src: "/imgs/bust.png",
     alt: "Contact Image",
     className: "",
     position: "",
@@ -46,6 +45,14 @@ export default function NavImage({ pathname }: { pathname: string }) {
 
   return (
     <>
+    {src &&
+      <Image
+        src={src}
+        alt={alt}
+        width={500}
+        height={500}
+      />
+    }
     </>
   );
 }
