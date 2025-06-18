@@ -12,8 +12,8 @@ const imageSettingsByPathname: Record<string, any> = {
     src: "/imgs/trees.png",
     alt: "About page image",
     className: "w-135 h-90 [clip-path:polygon(46%_0%,100%_0%,100%_100%,-20%_100%)]",
-    text: "About",
-    position: "absolute bottom-11 right-12",
+    text: "About Me",
+    position: "absolute bottom-8 right-2",
     shadow: "shadow-aboutnav-alt shadow-[8px_10px_0_0]"
   },
   "/projects": {
@@ -21,7 +21,7 @@ const imageSettingsByPathname: Record<string, any> = {
     alt: "Projects page image",
     className: "w-75 h-165",
     text: "Projects",
-    position: "absolute bottom-11 right-12",
+    position: "absolute bottom-8 right-2",
     shadow: "shadow-projectsnav-alt shadow-[8px_10px_0_0]"
   },
   "/blog": {
@@ -29,7 +29,7 @@ const imageSettingsByPathname: Record<string, any> = {
     alt: "Blog page image",
     className: "w-150 h-45",
     text: "Blog",
-    position: "absolute bottom-11 right-12",
+    position: "absolute bottom-8 right-2",
     shadow: "shadow-blognav-alt shadow-[8px_10px_0_0]"
   },
   "/contact": {
@@ -37,7 +37,7 @@ const imageSettingsByPathname: Record<string, any> = {
     alt: "Contact page image",
     className: "w-130 h-90",
     text: "Contact",
-    position: "absolute bottom-25 left-12",
+    position: "absolute bottom-20 left-2",
     shadow: "shadow-contactnav-alt shadow-[-8px_10px_0_0]"
   },
 }
