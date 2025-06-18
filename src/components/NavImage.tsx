@@ -1,7 +1,16 @@
 import Image from "next/image";
 
-// Set up object to map pathnames to image src, alt text, unique styles/classes
-const imageSettingsByPathname: Record<string, any> = {
+type ImageSettings = {
+  src?: string;
+  alt: string;
+  className: string;
+  text?: string;
+  textClasses?: string;
+  position: string;
+  shadow: string;
+};
+
+const imageSettingsByPathname: Record<string, ImageSettings> = {
   "/": {
     alt: "Home Image",
     className: "",
@@ -104,7 +113,7 @@ const imageSettingsByPathname: Record<string, any> = {
     `,
     shadow: "shadow-contactnav-alt shadow-[-8px_10px_0_0]"
   }
-}
+};
 
 export default function NavImage({ pathname }: { pathname: string }) {
   const config = imageSettingsByPathname[pathname];
