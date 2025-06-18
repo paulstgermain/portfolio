@@ -6,10 +6,10 @@ export default function Home() {
         <div
           className="
             relative
-            lg:w-90       lg:h-[560px]       lg:mt-20
-            md:w-72    md:h-[480px]    md:mt-16
-            sm:w-64    sm:h-[416px]    sm:mt-12
-            xs:w-52    xs:h-[384px]    xs:mt-10
+            lg:w-86 lg:h-[540px] lg:mt-22
+            md:w-62 md:h-[440px] md:mt-32
+            sm:w-54 sm:h-[480px] sm:mt-36
+            w-35 h-[600px] mt-32
           "
         >
           <div className="absolute inset-0 z-10 rounded-[40px] overflow-hidden">
@@ -25,15 +25,14 @@ export default function Home() {
           <div
             className="
               absolute
-              -top-8
-              lg:-left-92
-              md:-left-80
-              sm:-left-72
-              xs:-left-64
-              lg:w-[375px]
-              md:w-[325px]
-              sm:w-[280px]
-              xs:w-[240px]
+              top-25
+              lg:-top-8
+              md:-top-8
+              sm:-top-0
+              lg:-left-88 lg:w-[355px]
+              md:-left-70 md:w-[300px]
+              sm:-left-55 sm:w-[260px]
+              -left-35 w-[220px]
             "
           >
             <Image
@@ -47,15 +46,14 @@ export default function Home() {
           <div
             className="
               absolute
-              -top-8
-              lg:-right-92
-              md:-right-80
-              sm:-right-72
-              xs:-right-64
-              lg:w-[375px]
-              md:w-[325px]
-              sm:w-[280px]
-              xs:w-[240px]
+              top-25
+              lg:-top-8
+              md:-top-8
+              sm:-top-0
+              lg:-right-88 lg:w-[355px]
+              md:-right-70 md:w-[300px]
+              sm:-right-55 sm:w-[260px]
+              -right-35 w-[220px]
             "
           >
             <Image
