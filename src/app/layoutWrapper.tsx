@@ -56,7 +56,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
   }, [pathname]);
 
   return (
-    <div className={`transition-colors duration-300 ease-in-out ${backgroundClass} min-h-screen`}>
+    <div className={`transition-colors duration-300 ease-in-out ${backgroundClass} h-dvh`}>
       <NavBar bgClass={navBgClass} altBgClass={navAltBgClass} />
       {children}
       <BottomNav bgClass={bottomNavBgClass} altBgClass={navBgClass} pathname={pathname} />

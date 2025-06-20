@@ -18,7 +18,7 @@ const navItems = [
 export default function BottomNav({bgClass, pathname, altBgClass}: BottomNavProps) {
   return (
     <>
-      <nav className={`w-15/16 h-11 sm:h-16 md:h-20 lg:h-22 ${bgClass} rounded-[40px] mx-auto pl-12 pr-12 absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-colors duration-300 ease-in-out`}>
+      <nav className={`w-15/16 h-11 sm:h-16 md:h-20 lg:h-22 ${bgClass} rounded-[40px] mx-auto pl-4 sm:pl-8 md:pl-12 pr-12 absolute bottom-4 left-1/2 transform -translate-x-1/2 transition-colors duration-300 ease-in-out`}>
         <div className="flex items-center space-evenly h-full w-2/5 justify-between">
             {navItems.map(({ href, src, alt, label }) => {
               const isActive = pathname === href;

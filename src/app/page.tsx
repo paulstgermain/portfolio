@@ -9,7 +9,7 @@ export default function Home() {
             lg:w-86 lg:h-[540px] lg:mt-22
             md:w-62 md:h-[440px] md:mt-32
             sm:w-54 sm:h-[480px] sm:mt-36
-            w-35 h-[600px] mt-32
+            w-30 h-[500px] mt-20
           "
         >
           <div className="absolute inset-0 z-10 rounded-[40px] overflow-hidden">
@@ -32,7 +32,7 @@ export default function Home() {
               lg:-left-88 lg:w-[355px]
               md:-left-70 md:w-[300px]
               sm:-left-55 sm:w-[260px]
-              -left-35 w-[220px]
+              -left-30 w-[200px]
             "
           >
             <Image
@@ -53,7 +53,7 @@ export default function Home() {
               lg:-right-88 lg:w-[355px]
               md:-right-70 md:w-[300px]
               sm:-right-55 sm:w-[260px]
-              -right-35 w-[220px]
+              -right-30 w-[200px]
             "
           >
             <Image

@@ -6,6 +6,7 @@
 }
 
 @theme inline {
+  --breakpoint-xs: 26rem; /* 416px */
   --color-background: #ffffff;
   --color-foreground: #171717;
   --color-home: #191D0E;
