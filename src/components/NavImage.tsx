@@ -21,27 +21,29 @@ const imageSettingsByPathname: Record<string, ImageSettings> = {
     src: "/imgs/trees.webp",
     alt: "About page image",
     className: `
-      w-58 h-40
-      sm:w-85 sm:h-58
+      w-58 h-9
+      sm:w-85 sm:h-14
       md:w-90 md:h-60
       lg:w-135 lg:h-90
-      [clip-path:polygon(46%_0%,100%_0%,100%_100%,-20%_100%)]
+      md:[clip-path:polygon(46%_0%,100%_0%,100%_100%,-20%_100%)]
     `,
     text: "About Me",
     textClasses: `
-      bottom-8 right-12
+      bottom-0 right-12
+      sm:bottom-3 sm:right-12
+      md:bottom-8 md:right-12
       text-2xl
       sm:text-3xl
       md:text-4xl
     `,
     position: `
       absolute
-      bottom-3 right-2
-      sm:bottom-3 sm:right-2
+      bottom-1 right-1
+      sm:bottom-1 sm:right-1
       md:bottom-5 md:right-2
       lg:bottom-7 lg:right-2
     `,
-    shadow: "shadow-aboutnav-alt shadow-[8px_10px_0_0]"
+    shadow: "md:shadow-aboutnav-alt md:shadow-[8px_10px_0_0]"
   },
   "/projects": {
     src: "/imgs/buildings.webp",
