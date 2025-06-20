@@ -21,7 +21,8 @@ const imageSettingsByPathname: Record<string, ImageSettings> = {
     src: "/imgs/trees.webp",
     alt: "About page image",
     className: `
-      w-55 h-9
+      w-50 h-9
+      xs:w-55 xs:h-9
       sm:w-85 sm:h-14
       md:w-90 md:h-60
       lg:w-135 lg:h-90
@@ -29,7 +30,8 @@ const imageSettingsByPathname: Record<string, ImageSettings> = {
     `,
     text: "About Me",
     textClasses: `
-      bottom-0 right-12
+      bottom-0.5 right-8
+      xs:bottom-0.5 xs:right-10
       sm:bottom-3 sm:right-12
       md:bottom-8 md:right-12
       text-2xl
@@ -49,14 +51,16 @@ const imageSettingsByPathname: Record<string, ImageSettings> = {
     src: "/imgs/buildings.webp",
     alt: "Projects page image",
     className: `
-      w-55 h-9
+      w-50 h-9
+      xs:w-55 xs:h-9
       sm:w-50 sm:h-140
       md:w-60 md:h-150
       lg:w-75 lg:h-165
     `,
     text: "Projects",
     textClasses: `
-      bottom-0 right-12
+      bottom-0.5 right-8
+      xs:bottom-0.5 xs:right-10
       sm:bottom-8 sm:right-4
       md:bottom-8 md:right-6
       lg:bottom-8 lg:right-12
