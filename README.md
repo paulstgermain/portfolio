@@ -37,3 +37,5 @@ _Usage instructions for operating the website or app will go here._
 - [Design Doc](https://www.figma.com/design/4ey5VvGdRefWQcoghm5UnM/Untitled?node-id=0-1&t=wA6mWcDlSHSPM5E3-1)
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/5ed8c2f0-c9c5-43f1-929a-ee4faf1de2ed)
+_Landing page_
