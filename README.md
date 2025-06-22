@@ -39,3 +39,6 @@ _Usage instructions for operating the website or app will go here._
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/5ed8c2f0-c9c5-43f1-929a-ee4faf1de2ed)
 _Landing page_
+
+![image](https://github.com/user-attachments/assets/fa9e649b-1ba5-4ca9-8207-cb7c55ac2448)
+_About_
