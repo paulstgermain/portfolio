@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavImage from "./NavImage";
+import AboutOverview from "./AboutOverview";
 interface BottomNavProps {
   bgClass: string;
   pathname: string;
@@ -47,6 +48,7 @@ export default function BottomNav({bgClass, pathname, altBgClass}: BottomNavProp
             })}
         </div>
         <NavImage pathname={pathname} />
+        {pathname === "/about" && <AboutOverview />}
       </nav>
     </>
   );
