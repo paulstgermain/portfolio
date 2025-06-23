@@ -12,9 +12,9 @@ export default function AboutOverview() {
           priority
         />
 
-        <div className="absolute inset-0 px-14 py-6 mt-2 overflow-y-auto w-[600px] h-131 custom-scrollbar">
-          <div className="text-primary font-istok-web text-xl wrap-normal">
+        <div className="text-primary absolute inset-0 pl-14 pr-8 py-6 mt-2 w-[600px] h-131 custom-scrollbar">
             <h2 className="font-chakra-petch text-4xl mb-8">Overview</h2>
+          <div className="text-primary font-istok-web text-xl wrap-normal overflow-y-auto h-106 custom-scrollbar pr-7">
             <p className="mb-4 ml-4">
               Hi, I'm Paul! I’m a Software Engineer with 3 years of
               focused experience using technology to build products
