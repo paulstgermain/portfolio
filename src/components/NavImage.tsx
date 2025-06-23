@@ -26,7 +26,7 @@ const imageSettingsByPathname: Record<string, ImageSettings> = {
       sm:w-85 sm:h-14
       md:w-90 md:h-60
       lg:w-135 lg:h-90
-      md:[clip-path:polygon(46%_0%,100%_0%,100%_100%,-20%_100%)]
+      md:[clip-path:polygon(41%_0%,100%_0%,100%_100%,-20%_100%)]
     `,
     text: "About Me",
     textClasses: `
