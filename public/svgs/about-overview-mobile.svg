@@ -1,0 +1,14 @@
+<svg width="474" height="641" viewBox="0 0 474 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 364V597C10 619.091 27.9086 637 50 637H350" stroke="#34600E" stroke-width="4"/>
+<path d="M393 639L368.926 604H263V639" stroke="#34600E" stroke-width="4"/>
+<path d="M9 168L44 147.815L44 59L9 59" stroke="#34600E" stroke-width="5"/>
+<path d="M9 168L33 147.815L33 59L9 59" stroke="#34600E" stroke-width="2"/>
+<path d="M399 1H204" stroke="#34600E" stroke-width="2"/>
+<line x1="262.993" y1="623" x2="115.993" y2="622" stroke="#34600E" stroke-width="2"/>
+<line x1="1" y1="294" x2="0.999993" y2="451" stroke="#34600E" stroke-width="2"/>
+<line x1="393" y1="637" x2="445" y2="637" stroke="#34600E" stroke-width="4"/>
+<line x1="447" y1="161" x2="447" y2="567" stroke="#34600E" stroke-width="4"/>
+<line x1="473.5" y1="549" x2="473.5" y2="353" stroke="#34600E"/>
+<path d="M11 79V48C11 25.9086 28.9086 8 51 8H164.5" stroke="#34600E" stroke-width="4"/>
+<path d="M274 8H405C427.091 8 445 25.9086 445 48V112" stroke="#34600E" stroke-width="4"/>
+</svg>
