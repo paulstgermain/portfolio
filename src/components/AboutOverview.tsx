@@ -81,7 +81,7 @@ export default function AboutOverview() {
             scrollbar-about
           ">
             <p className={`${overviewText}`}>
-              Hi, I'm Paul! I’m a Software Engineer with 3 years of
+              Hi, I'm Paul! I'm a Software Engineer with 3 years of
               focused experience using technology to build products
               and solve problems for nonprofits and startups in the 
               USA and the UK.
@@ -93,7 +93,7 @@ export default function AboutOverview() {
               That lifelong love evolved into a passion for web development, where I bring energy, curiosity, and a mission-driven mindset to every project. 
             </p>
             <p className={`${overviewText}`}>
-              I thrive when I’m using code to create positive change or inject some creativity and joy back into the online experience.
+              I thrive when I'm using code to create positive change or inject some creativity and joy back into the online experience.
             </p>
             <p className={`${overviewText}`}>
               When I’m not coding, I enjoy digging into internet nostalgia, taking in nature through the lens of my camera, coexisting with my cats, and reading.
