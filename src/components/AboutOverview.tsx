@@ -57,6 +57,7 @@ export default function AboutOverview() {
           sm:w-78
           md:w-103
           lg:w-110
+          xl:w-145
           w-150
         ">
             <h2 className="
