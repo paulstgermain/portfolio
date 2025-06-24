@@ -1,18 +1,18 @@
 import Image from "next/image";
 
 const overviewText = `
-  xs:mb-2
+  xs:mb-2 ml-2
   sm:mb-4 ml-4
-  md:mb-4
-  lg:mb-4
-  xl:mb-4
+  md:mb-4 ml-4
+  lg:mb-4 ml-4
+  xl:mb-4 ml-4
 `;
 
 export default function AboutOverview() {
   return (
     <div className="
       absolute
-      xs:bottom-14 xs:right-6
+      xs:bottom-14 xs:right-13
       sm:bottom-20 sm:right-20
       md:bottom-50 md:right-40
       lg:bottom-75 lg:right-60
@@ -21,7 +21,7 @@ export default function AboutOverview() {
     ">
       <div className="
         relative
-        xs:w-85
+        xs:w-70
         sm:w-110
         md:w-140
         lg:w-185
@@ -48,18 +48,19 @@ export default function AboutOverview() {
           text-primary 
           absolute 
           inset-0
-          xs:pl-10 xs:pr-75 xs:py-2
+          xs:pl-10 xs:pr-0 xs:py-2
           sm:pl-10 sm:pr-54 sm:py-2
           md:pl-10 md:pr-6 md:py-4
           lg:pl-14 lg:pr-8 lg:py-6 
           mt-2
+          xs:w-60
           md:w-110
           lg:w-140
           w-150
         ">
             <h2 className="
               font-chakra-petch
-              xs:text-2xl
+              xs:text-xl
               sm:text-3xl
               md:text-3xl
               lg:text-4xl
@@ -70,13 +71,17 @@ export default function AboutOverview() {
             ">Overview</h2>
           <div className="
             text-primary font-istok-web
-            text-xl
-            xs:h-93
+            xs:text-[16px]
+            sm:text-xl
+            md:text-xl
+            lg:text-xl
+            xl:text-xl
+            xs:h-75
             sm:h-122
             md:h-72
             lg:h-96
             xl:h-106
-            pr-7
+            pr-4
             scrollbar-styles
             scrollbar-about
           ">
