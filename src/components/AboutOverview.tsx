@@ -12,7 +12,7 @@ export default function AboutOverview() {
           priority
         />
 
-        <div className="text-primary absolute inset-0 pl-14 pr-8 py-6 mt-2 w-[600px] h-131 custom-scrollbar">
+        <div className="text-primary absolute inset-0 pl-14 pr-8 py-6 mt-2 w-[600px] h-131 scrollbar-about">
             <h2 className="font-chakra-petch text-4xl mb-8">Overview</h2>
           <div className="text-primary font-istok-web text-xl wrap-normal overflow-y-auto h-106 custom-scrollbar pr-7">
             <p className="mb-4 ml-4">
