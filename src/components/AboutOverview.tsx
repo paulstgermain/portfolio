@@ -13,18 +13,18 @@ export default function AboutOverview() {
     <div className="
       absolute
       xs:bottom-14 xs:right-13
-      sm:bottom-20 sm:right-20
+      sm:bottom-20 sm:right-30
       md:bottom-50 md:right-40
-      lg:bottom-75 lg:right-60
+      lg:bottom-52 lg:right-90
       xl:bottom-37 xl:right-95 
       z-0
     ">
       <div className="
         relative
         xs:w-70
-        sm:w-110
+        sm:w-90
         md:w-140
-        lg:w-185
+        lg:w-155
         xl:w-200
       ">
         <Image
@@ -48,38 +48,41 @@ export default function AboutOverview() {
           text-primary 
           absolute 
           inset-0
-          xs:pl-10 xs:pr-0 xs:py-2
-          sm:pl-10 sm:pr-54 sm:py-2
-          md:pl-10 md:pr-6 md:py-4
-          lg:pl-14 lg:pr-8 lg:py-6 
+          xs:pl-10 xs:py-2
+          sm:pl-10 sm:py-2
+          md:pl-10 md:py-4
+          lg:pl-12 lg:py-6 
           mt-2
           xs:w-60
-          md:w-110
-          lg:w-140
+          sm:w-78
+          md:w-103
+          lg:w-110
           w-150
         ">
             <h2 className="
               font-chakra-petch
               xs:text-xl
-              sm:text-3xl
+              sm:text-2xl
               md:text-3xl
-              lg:text-4xl
+              lg:text-3xl
+              xl:text-4xl
               xs:mb-2
               sm:mb-4
               md:mb-6
               lg:mb-8
+              xl:mb-8
             ">Overview</h2>
           <div className="
             text-primary font-istok-web
             xs:text-[16px]
-            sm:text-xl
+            sm:text-lg
             md:text-xl
             lg:text-xl
             xl:text-xl
             xs:h-75
-            sm:h-122
+            sm:h-98
             md:h-72
-            lg:h-96
+            lg:h-77
             xl:h-106
             pr-4
             scrollbar-styles
