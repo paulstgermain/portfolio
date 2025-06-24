@@ -37,8 +37,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.scrollbar-about {
+.scrollbar-styles {
   scrollbar-width: auto;
-  scrollbar-color: #4B8716 transparent;
   scrollbar-gutter: hidden;
+  overflow-y: auto;
+}
+
+.scrollbar-about {
+  scrollbar-color: #4B8716 transparent;
 }
