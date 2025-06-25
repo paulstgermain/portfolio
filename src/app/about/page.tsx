@@ -29,7 +29,7 @@ export default function About() {
             width={500}
             height={300}
             priority
-            className="xs:hidden sm:hidden md:block lg:block xl:block"
+            className="xs:block sm:hidden md:block lg:block xl:block"
           />
           <Image
             src="/svgs/about-quickstats-mobile.svg"
@@ -37,13 +37,21 @@ export default function About() {
             width={400}
             height={300}
             priority
-            className="xs:block sm:block md:hidden lg:hidden xl:hidden"
+            className="xs:hidden sm:block md:hidden lg:hidden xl:hidden"
           />
           <div className="text-primary absolute inset-0">
             <h2 className="
               absolute
-              right-5
-              top-2
+              xs:right-3
+              sm:right-5
+              md:right-5
+              lg:right-5
+              xl:right-5
+              xs:top-0
+              sm:top-2
+              md:top-2
+              lg:top-2
+              xl:top-2
               font-chakra-petch 
               text-2xl 
               xs:text-xl
@@ -63,12 +71,12 @@ export default function About() {
               md:text-md
               lg:text-lg
               xl:text-xl
-              xs:top-18 xs:right-6
+              xs:top-12 xs:right-2
               sm:top-18 sm:right-6
               md:top-18 md:right-6
               lg:top-25 lg:right-6
               xl:top-25 xl:right-6 
-              xs:w-55
+              xs:w-80
               sm:w-80
               md:w-71
               lg:w-115
