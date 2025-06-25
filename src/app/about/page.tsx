@@ -11,8 +11,8 @@ export default function About() {
         xs:right-20 xs:top-9
         sm:right-40 sm:top-12
         md:right-5 md:top-12
-        lg:right-15 lg:top-25 
-        xl:right-15 xl:top-25 
+        lg:right-15 lg:top-13
+        xl:right-15 xl:top-13
         z-0
       ">
         <div className="
