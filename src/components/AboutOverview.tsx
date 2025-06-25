@@ -52,6 +52,7 @@ export default function AboutOverview() {
           sm:pl-10 sm:py-2
           md:pl-10 md:py-4
           lg:pl-12 lg:py-6 
+          xl:pl-14 xl:py-6 
           mt-2
           xs:w-60
           sm:w-78

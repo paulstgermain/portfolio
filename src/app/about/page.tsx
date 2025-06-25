@@ -1,8 +1,88 @@
+import Image from "next/image";
 
 export default function About() {
   return (
-    <main>
-      <div className="relative mt-20 ml-70 mr-65">
+    <main className="relative 
+      w-lvw
+    ">
+      <div className="
+        absolute 
+        md:right-5 md:top-12
+        lg:right-15 lg:top-25 
+        xl:right-15 xl:top-25 
+        z-0
+      ">
+        <div className="
+          relative
+          md:w-103
+          lg:w-110
+          xl:w-124
+        ">
+          <Image
+            src="/svgs/about-quickstats.svg"
+            alt="About quick stats background image"
+            width={500}
+            height={300}
+            priority
+            className="xs:hidden sm:hidden md:block lg:block xl:block"
+          />
+          <Image
+            src="/svgs/about-quickstats-mobile.svg"
+            alt="About quick stats background image"
+            width={400}
+            height={300}
+            priority
+            className="xs:block sm:block md:hidden lg:hidden xl:hidden"
+          />
+          <div className="text-primary absolute inset-0">
+            <h2 className="
+              absolute
+              right-5
+              top-2
+              font-chakra-petch 
+              text-2xl 
+              xs:text-xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-3xl
+              xl:text-4xl
+            ">
+              Quick Stats
+            </h2>
+            <ul className="
+              absolute 
+              font-istok-web 
+              text-right 
+              xs:text-[16px]
+              sm:text-lg
+              md:text-md
+              lg:text-lg
+              xl:text-xl
+              md:top-18 md:right-6
+              lg:top-25 lg:right-6
+              xl:top-25 xl:right-6 
+              md:w-71
+              lg:w-115
+              xl:w-115
+            ">
+              <li>
+                <span className="font-bold">{"<> "}Full Stack Software Engineer</span>, 
+                <span className="italic"> Silicon Society</span>
+                <span className="block">2023 - 2024</span>
+              </li>
+              <li>
+                <span className="font-bold">{"<> "}Software Engineer</span>, 
+                <span className="italic"> BloomTech</span>
+                <span className="block">2023 - 2023</span>
+              </li>
+              <li>
+                <span className="font-bold">{"<> "}Full Stack Team Lead</span>, 
+                <span className="italic"> BloomTech</span>
+                <span className="block">2021 - 2023</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
   )
