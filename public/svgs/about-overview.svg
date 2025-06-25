@@ -1,0 +1,16 @@
+<svg width="906" height="640" viewBox="0 0 906 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 364.5V597C10 619.091 27.9086 637 50 637H599.5" stroke="#34600E" stroke-width="4"/>
+<path d="M638 638L613.926 603H508V638" stroke="#34600E" stroke-width="4"/>
+<path d="M9 168L44 147.815L44 59L9 59" stroke="#34600E" stroke-width="5"/>
+<path d="M9 168L33 147.815L33 59L9 59" stroke="#34600E" stroke-width="2"/>
+<path d="M650 1H298" stroke="#34600E" stroke-width="2"/>
+<line x1="507" y1="621" x2="135" y2="621" stroke="#34600E" stroke-width="2"/>
+<line x1="1" y1="294" x2="0.999993" y2="451" stroke="#34600E" stroke-width="2"/>
+<line x1="687.522" y1="637.653" x2="882.522" y2="423.653" stroke="#34600E" stroke-width="4"/>
+<line x1="637" y1="637" x2="689" y2="637" stroke="#34600E" stroke-width="4"/>
+<line x1="716.268" y1="587.319" x2="905.268" y2="384.319" stroke="#34600E" stroke-width="2"/>
+<line x1="752" y1="143" x2="752" y2="549" stroke="#34600E" stroke-width="4"/>
+<line x1="772.5" y1="529" x2="772.5" y2="333" stroke="#34600E"/>
+<path d="M11 79V48C11 25.9086 28.9086 8 51 8H164.5" stroke="#34600E" stroke-width="4"/>
+<path d="M321 8H649.5C671.591 8 689.5 25.9086 689.5 48V112" stroke="#34600E" stroke-width="4"/>
+</svg>

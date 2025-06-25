@@ -36,3 +36,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.scrollbar-styles {
+  scrollbar-width: auto;
+  scrollbar-gutter: hidden;
+  overflow-y: auto;
+}
+
+.scrollbar-about {
+  scrollbar-color: #4B8716 transparent;
+}
