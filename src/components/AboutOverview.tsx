@@ -106,7 +106,7 @@ export default function AboutOverview() {
               I thrive when I&apos;m using code to create positive change or inject some creativity and joy back into the online experience.
             </p>
             <p className={`${overviewText}`}>
-              When I&apos;m not coding for work, I'm coding for fun. I also enjoy digging into internet nostalgia, spending time with my cats, and reading.
+              When I&apos;m not coding for work, I&apos;m coding for fun. I also enjoy digging into internet nostalgia, spending time with my cats, and reading.
             </p>
             <p className={`${overviewText}`}>
               Here are some of things I currently like to build with:
