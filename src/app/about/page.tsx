@@ -2,11 +2,14 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="relative 
+    <main className="
+      relative 
       w-lvw
     ">
       <div className="
         absolute 
+        xs:right-20 xs:top-35
+        sm:right-40 sm:top-12
         md:right-5 md:top-12
         lg:right-15 lg:top-25 
         xl:right-15 xl:top-25 
@@ -14,6 +17,8 @@ export default function About() {
       ">
         <div className="
           relative
+          xs:w-70
+          sm:w-80
           md:w-103
           lg:w-110
           xl:w-124
@@ -53,14 +58,18 @@ export default function About() {
               absolute 
               font-istok-web 
               text-right 
-              xs:text-[16px]
-              sm:text-lg
+              xs:text-sm
+              sm:text-sm
               md:text-md
               lg:text-lg
               xl:text-xl
+              xs:top-18 xs:right-6
+              sm:top-18 sm:right-6
               md:top-18 md:right-6
               lg:top-25 lg:right-6
               xl:top-25 xl:right-6 
+              xs:w-55
+              sm:w-80
               md:w-71
               lg:w-115
               xl:w-115
