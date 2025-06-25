@@ -8,7 +8,7 @@ export default function About() {
     ">
       <div className="
         absolute 
-        xs:right-20 xs:top-35
+        xs:right-20 xs:top-9
         sm:right-40 sm:top-12
         md:right-5 md:top-12
         lg:right-15 lg:top-25 
