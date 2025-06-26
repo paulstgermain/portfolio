@@ -1,5 +1,66 @@
 {
   "projects": [
-
+    {
+      "id": "project1",
+      "title": "Dejunk",
+      "year": 2025,
+      "techStack": ["HTML", "CSS", "JavaScript", "Chrome Extension API"],
+      "description": "Dejunk is a browser extension that helps users declutter their online lives by allowing them to toggle the visibility of various elements on web pages, such as ads, pop-ups, and other distractions. It provides a simple interface for users to customize their browsing experience and focus on the content that matters most to them. As the sole developer, I designed and built the extension from scratch.",
+      "shortBlurb": "Browser extension to declutter online experiences by toggling visibility of web elements.",
+      "links": {
+        "website": null,
+        "github": [
+          { "tooltip": "Github Repo", "link": "https://github.com/paulstgermain/dejunk" }
+        ]
+      },
+      "imageSrc": ""
+    },
+    {
+      "id": "project2",
+      "title": "Vega",
+      "year": 2024,
+      "techStack": ["React", "TypeScript", "Material UI", "Node.js", "Express", "Auth0", "PostgreSQL"],
+      "description": "Vega is a web app designed to help job seekers more efficiently manage their job search. Using a companion browser extension, users can save job postings from any website to their Vega account. The app then helps them track their applications, interviews, and follow-ups through a kanban-style interface. It also provides a Find-a-Job features that allows users to quickly use Google queries to find jobs that match their criteria. As solo developer, I built the app and browser extension from the ground up.",
+      "shortBlurb": "Web app and browser extension to help job seekers manage their job search efficiently.",
+      "links": {
+        "website": "https://vega-drab.vercel.app/",
+        "github": [
+          { "tooltip": "Front-end Repo", "link": "https://github.com/paulstgermain/vega-fe" },
+          { "tooltip": "Back-end Repo", "link": "https://github.com/paulstgermain/vega-be" }
+        ]
+      },
+      "imageSrc": ""
+    },
+    {
+      "id": "project3",
+      "title": "StorySquad",
+      "year": 2024,
+      "techStack": ["Dart", "Flutter", "Node.js", "Express", "Auth0", "PostgreSQL"],
+      "description": "A mobile app designed to help kids spend time off screens engaging in analog creativity. Enables kids to enter hand-written stories to compete against each other. As Full Stack Engineer & Team Lead, I worked extensively on the app & led the team into the internal beta phase.",
+      "shortBlurb": "Mobile app for kids to engage in analog creativity through hand-written stories.",
+      "links": {
+        "website": null,
+        "github": [
+          { "tooltip": "", "link": "" }
+        ]
+      },
+      "imageSrc": ""
+    },
+    {
+      "id": "project4",
+      "title": "HRF DocDB",
+      "year": 2023,
+      "techStack": ["React", "Ant Design", "Redux", "Node.js", "Express", "Okta", "PostgreSQL" ],
+      "description": "An internal research tool built for Human Rights First & The Pat Finucane Centre to help them manage, analyze, and search through scanned physical documents related to human rights violations. As Full-Stack Team Lead, I led the team through the project lifecycle, from initial requirements gathering to deployment. Then I implemented final features and polish, and shipped the project.",
+      "shortBlurb": "Internal research tool enabling search an analysis of physical documents.",
+      "links": {
+        "website": null,
+        "github": [
+          { "tooltip": "Front-end Repo", "link": "https://github.com/paulstgermain/human-rights-first-docdb-fe" },
+          { "tooltip": "Back-end Repo", "link": "https://github.com/paulstgermain/human-rights-first-docdb-be" }
+        ]
+      },
+      "imageSrc": ""
+    }
   ]
 }
