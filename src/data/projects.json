@@ -10,7 +10,7 @@
       "links": {
         "website": null,
         "github": [
-          { "tooltip": "Github Repo", "link": "https://github.com/paulstgermain/dejunk" }
+          { "text": "Github Code", "link": "https://github.com/paulstgermain/dejunk" }
         ]
       },
       "imageSrc": ""
@@ -25,8 +25,8 @@
       "links": {
         "website": "https://vega-drab.vercel.app/",
         "github": [
-          { "tooltip": "Front-end Repo", "link": "https://github.com/paulstgermain/vega-fe" },
-          { "tooltip": "Back-end Repo", "link": "https://github.com/paulstgermain/vega-be" }
+          { "text": "Front-end Code", "link": "https://github.com/paulstgermain/vega-fe" },
+          { "text": "Back-end Code", "link": "https://github.com/paulstgermain/vega-be" }
         ]
       },
       "imageSrc": ""
@@ -41,7 +41,7 @@
       "links": {
         "website": null,
         "github": [
-          { "tooltip": "", "link": "" }
+          { "text": "", "link": "" }
         ]
       },
       "imageSrc": ""
@@ -56,8 +56,8 @@
       "links": {
         "website": null,
         "github": [
-          { "tooltip": "Front-end Repo", "link": "https://github.com/paulstgermain/human-rights-first-docdb-fe" },
-          { "tooltip": "Back-end Repo", "link": "https://github.com/paulstgermain/human-rights-first-docdb-be" }
+          { "text": "Front-end Code", "link": "https://github.com/paulstgermain/human-rights-first-docdb-fe" },
+          { "text": "Back-end Code", "link": "https://github.com/paulstgermain/human-rights-first-docdb-be" }
         ]
       },
       "imageSrc": ""
