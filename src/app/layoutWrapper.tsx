@@ -57,11 +57,15 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
 
   return (
     <div className={`flex flex-col transition-colors duration-300 ease-in-out ${backgroundClass} h-dvh`}>
-      <NavBar bgClass={navBgClass} altBgClass={navAltBgClass} />
-      <div className="flex flex-col flex-1 mt-6.5 xs:mb-15 sm:mb-20 md:mb-24 lg:mb-26 xl:mb-26">
+      <div className="flex-shrink-0">
+        <NavBar bgClass={navBgClass} altBgClass={navAltBgClass} />
+      </div>
+      <div className="flex-1 flex flex-col mt-6.5 min-h-0 xs:mb-15 sm:mb-20 md:mb-24 lg:mb-26 xl:mb-26">
         {children}
       </div>
-      <BottomNav bgClass={bottomNavBgClass} altBgClass={navBgClass} pathname={pathname} />
+      <div className="flex-shrink-0">
+        <BottomNav bgClass={bottomNavBgClass} altBgClass={navBgClass} pathname={pathname} />
+      </div>
     </div>
   );
 }

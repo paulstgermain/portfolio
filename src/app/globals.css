@@ -41,8 +41,13 @@ body {
   scrollbar-width: auto;
   scrollbar-gutter: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .scrollbar-about {
   scrollbar-color: #4B8716 transparent;
+}
+
+.scrollbar-projects {
+  scrollbar-color: #D0653A transparent;
 }

@@ -13,7 +13,8 @@
           { "text": "Github Code", "link": "https://github.com/paulstgermain/dejunk" }
         ]
       },
-      "imageSrc": ""
+      "imageSrc": "/imgs/dejunk.webp",
+      "imageAlt": "A screenshot of the Dejunk Chrome extension in action, blocking Shorts sections on YouTube from appearing for the user"
     },
     {
       "id": "project2",
@@ -29,7 +30,8 @@
           { "text": "Back-end Code", "link": "https://github.com/paulstgermain/vega-be" }
         ]
       },
-      "imageSrc": ""
+      "imageSrc": "/imgs/vega.webp",
+      "imageAlt": "A screenshot of the Vega app dashboard, showing columns containing cards with job listing information"
     },
     {
       "id": "project3",
@@ -40,11 +42,10 @@
       "shortBlurb": "Mobile app for kids to engage in analog creativity through hand-written stories.",
       "links": {
         "website": null,
-        "github": [
-          { "text": "", "link": "" }
-        ]
+        "github": []
       },
-      "imageSrc": ""
+      "imageSrc": "/imgs/story-squad.webp",
+      "imageAlt": "A screenshot of the Stor Squad Clash of the Pencils dashboard"
     },
     {
       "id": "project4",
@@ -60,7 +61,8 @@
           { "text": "Back-end Code", "link": "https://github.com/paulstgermain/human-rights-first-docdb-be" }
         ]
       },
-      "imageSrc": ""
+      "imageSrc": "/imgs/hrf-docdb.webp",
+      "imageAlt": "A screenshot of the HRF DocDB project, showing me as lead developer demoing the project dashboard, listing documents surfaced by a user search"
     }
   ]
 }
