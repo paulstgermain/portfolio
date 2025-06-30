@@ -6,6 +6,7 @@ import data from '../../data/projects.json';
 interface Project {
   id: string,
   title: string,
+  year: string,
   techStack: string[],
   description: string,
   shortBlurb: string,
@@ -42,8 +43,19 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="text-primary font-istok-web flex-7 border-projectsnav border-2 mr-95">
+        <div className="text-primary font-istok-web flex-7 mr-95 scrollbar-styles scrollbar-projects overflow-y-auto">
           {/* Projects content goes here, shown to user when they click on a project image */}
+          {activeProject && 
+          <>
+            <div className="text-2xl mt-10 mx-2">
+              <p className="border-projectsnav border-2 mb-2 px-2 w-fit">{activeProject.title} | {activeProject.year}</p>
+              <p className="border-projectsnav border-2 text-xl mb-2 px-2">{activeProject.techStack.map(tech => `${tech} `)}</p>
+            </div>
+            <div className="border-projectsnav border-2 mx-2 px-2">
+              <p className="text-base">{activeProject.description}</p>
+            </div>
+          </>
+          }
         </div>
       </div>
     </main>
