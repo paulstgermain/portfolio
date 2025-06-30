@@ -36,8 +36,11 @@ export default function Projects() {
           <div className="h-full scrollbar-styles scrollbar-projects overflow-y-scroll">
             <div className="flex flex-col py-10 space-y-10">
               {projects && projects.map((project, index) => (
-                <div key={project.title || index} className="rounded-[40px] overflow-hidden w-89 h-53 mx-auto flex-shrink-0 cursor-pointer" onClick={() => handleClick(project)}>
-                  <Image src={project.imageSrc} alt={project.imageAlt} width={386} height={217} />
+                <div className="relative">
+                  <Image src="/svgs/project-border.svg" alt="Project screenshot border" width={400} height={300} className={`${activeProject === project ? 'opacity-100' : 'opacity-0'} transition-all duration-250 ease-in-out`} />
+                  <div key={project.title || index} className={`absolute inset-0 mt-7 ml-6 rounded-[40px] overflow-hidden w-89 h-53 mx-auto flex-shrink-0 cursor-pointer`} onClick={() => handleClick(project)}>
+                    <Image src={project.imageSrc} alt={project.imageAlt} width={386} height={217} />
+                  </div>
                 </div>
               ))}
             </div>
@@ -52,8 +55,10 @@ export default function Projects() {
               <p className="border-projectsnav border-2 text-xl mb-2 px-2">{activeProject.techStack.map(tech => `${tech} `)}</p>
             </div>
             <div className="flex flex-col border-projectsnav border-2 mx-2 px-2">
-              <p className="text-base">{activeProject.description}</p>
+              <p className="text-xl">{activeProject.description}</p>
               {(activeProject.links.website || activeProject.links.github.length > 0) &&
+              <>
+              <p className="text-xl underline mt-3">Links:</p>
                 <ul className="mt-3">
                   {activeProject.links.website &&
                     <li>Website: <a href={activeProject.links.website} target="_blank" className="hover:underline cursor-pointer">{activeProject.links.website}</a></li>
@@ -62,6 +67,7 @@ export default function Projects() {
                     activeProject.links.github.map(url => <li><a href={url.link} target="_blank" className="hover:underline cursor-pointer">{url.text}</a></li>)
                   }
                 </ul>
+              </>
               }
             </div>
           </>
