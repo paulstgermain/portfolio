@@ -51,8 +51,18 @@ export default function Projects() {
               <p className="border-projectsnav border-2 mb-2 px-2 w-fit">{activeProject.title} | {activeProject.year}</p>
               <p className="border-projectsnav border-2 text-xl mb-2 px-2">{activeProject.techStack.map(tech => `${tech} `)}</p>
             </div>
-            <div className="border-projectsnav border-2 mx-2 px-2">
+            <div className="flex flex-col border-projectsnav border-2 mx-2 px-2">
               <p className="text-base">{activeProject.description}</p>
+              {(activeProject.links.website || activeProject.links.github.length > 0) &&
+                <ul className="mt-3">
+                  {activeProject.links.website &&
+                    <li>Website: <a href={activeProject.links.website} target="_blank" className="hover:underline cursor-pointer">{activeProject.links.website}</a></li>
+                  }
+                  {activeProject.links.github.length > 0 &&
+                    activeProject.links.github.map(url => <li><a href={url.link} target="_blank" className="hover:underline cursor-pointer">{url.text}</a></li>)
+                  }
+                </ul>
+              }
             </div>
           </>
           }
