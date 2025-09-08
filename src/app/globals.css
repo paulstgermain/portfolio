@@ -51,3 +51,14 @@ body {
 .scrollbar-projects {
   scrollbar-color: #D0653A transparent;
 }
+
+.projects-frame {
+  border: 30px solid transparent;
+  border-image: url("/svgs/project-border.svg") 40;
+}
+
+.projects-content-frame {
+  border: 30px solid transparent;
+  border-image: url("/svgs/project-border.svg") 40;
+  background-color: transparent!important;
+}
