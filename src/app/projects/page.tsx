@@ -1,26 +1,9 @@
 "use client"
 import { useState } from 'react';
-import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
 import data from '../../data/projects.json';
-
-interface Project {
-  id: string,
-  title: string,
-  year: string,
-  techStack: string[],
-  description: string,
-  shortBlurb: string,
-  links: {
-    website: string | null,
-    github: {
-      text: string,
-      link: string
-    }[]
-  },
-  imageSrc: string,
-  imageAlt: string
-}
+import { Project } from '../types';
+import ProjectModal from '@/components/ProjectModal';
 
 export default function Projects() {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
@@ -33,6 +16,7 @@ export default function Projects() {
   return (
     <main className="
       h-full
+      w-full
     ">
       <div className="
         flex
@@ -68,10 +52,8 @@ export default function Projects() {
                 <ProjectCard
                   key={index}
                   index={index}
-                  src={project.imageSrc}
-                  alt={project.imageAlt}
-                  title={project.title}
-                  description={project.shortBlurb}
+                  project={project}
+                  handleClick={handleClick}
                 />
               ))}
             </div>
@@ -87,6 +69,7 @@ export default function Projects() {
         ">
         </div>
       </div>
+      <ProjectModal activeProject={activeProject} setActiveProject={setActiveProject} />
     </main>
   );
 }

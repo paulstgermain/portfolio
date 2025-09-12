@@ -1,18 +1,24 @@
 import Image from 'next/image';
+import { Project } from '@/app/types';
 
-export default function ProjectCard({ index, src, alt, title, description }: { index: number, src: string, alt: string, title: string, description: string }) {
+export default function ProjectCard({ index, project, handleClick }: { index: number, project: Project, handleClick: (project: Project) => void }) {
+  const { imageSrc, imageAlt, title, shortBlurb } = project;
+
   return (
-    <div className={`relative
+    <div className={`
+      relative
       overflow-hidden
       rounded-[40px]
+      cursor-pointer
       ${index === 0 ?
         "w-[340px] h-[190px] sm:w-[280px] sm:h-[180px] md:w-[280px] md:h-[180px] lg:w-[300px] lg:h-[200px] xl:w-[450px] xl:h-[250px]" :
         "w-[340px] h-[190px] sm:w-[280px] sm:h-[180px] md:w-[280px] md:h-[180px] lg:w-[300px] lg:h-[200px] xl:w-[450px] xl:h-[250px]"
-      }
-    `}>
+      }`}
+      onClick={() => handleClick(project)}
+      >
       <Image
-        src={src}
-        alt={alt}
+        src={imageSrc}
+        alt={imageAlt}
         fill
         priority
         className="object-cover rounded-[40px]"
@@ -36,7 +42,7 @@ export default function ProjectCard({ index, src, alt, title, description }: { i
             lg:text-xl
             xl:text-xl
             mt-2
-          ">{description}</p>
+          ">{shortBlurb}</p>
         </div>
       </div>
     </div>
