@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
+import ProjectCard from '@/components/ProjectCard';
 import data from '../../data/projects.json';
 
 interface Project {
@@ -30,50 +31,60 @@ export default function Projects() {
   }
 
   return (
-    <main className="h-full">
-      <div className="flex flex-row h-full">
-        <div className="flex-6  ml-14 flex flex-col">
-          <div className="h-full scrollbar-styles scrollbar-projects overflow-y-scroll">
-            <div className="flex flex-col py-10 space-y-10 ">
+    <main className="
+      h-full
+    ">
+      <div className="
+        flex
+        flex-row
+        h-full
+      ">
+        <div className="
+          xs:flex-1
+          sm:flex-2
+          md:flex-2
+          lg:flex-3
+          xl:flex-5
+          ml-7
+          mr-2
+          sm:ml-10
+          md:ml-10 
+          lg:ml-14 
+          xl:ml-16
+        ">
+          <div className="
+            scrollbar-styles
+            scrollbar-projects
+            overflow-y-scroll
+            h-full
+          ">
+            <div className="
+              flex
+              flex-wrap
+              gap-5
+              py-5
+            ">
               {projects && projects.map((project, index) => (
-                  <div key={project.id || index} className={`relative rounded-[40px] overflow-hidden w-89 h-53 mx-auto cursor-pointer ${activeProject && activeProject.id === project.id ? "projects-frame" : ""} transition-all duration-300 ease-in-out`} onClick={() => handleClick(project)}>
-                    <Image src={project.imageSrc} alt={project.imageAlt} width={356} height={212} />
-                  </div>
+                <ProjectCard
+                  key={index}
+                  index={index}
+                  src={project.imageSrc}
+                  alt={project.imageAlt}
+                  title={project.title}
+                  description={project.shortBlurb}
+                />
               ))}
             </div>
           </div>
         </div>
-        <div className={`text-primary font-istok-web flex-7 mr-95 scrollbar-styles scrollbar-projects overflow-y-auto ${activeProject ? "projects-content-frame" : ""}`}>
-          {/* Projects content goes here, shown to user when they click on a project image */}
-          {activeProject && 
-          <>
-            <div className="text-2xl mt-10 mx-2">
-              <p className=" mb-2 px-2 w-fit">{activeProject.title} | {activeProject.year}</p>
-              <p className=" text-xl mb-2 px-2">{activeProject.techStack.map((tech, i) => <span key={tech + i}>{tech} <span className="text-projectsnav">| </span></span>)}</p>
-            </div>
-            <div className="flex flex-col  mx-2 px-2">
-              <p className="text-xl">{activeProject.description}</p>
-              {(activeProject.links.website || activeProject.links.github.length > 0) &&
-              <>
-              <p className="text-xl underline mt-3">Links:</p>
-                <ul className="mt-3">
-                  {activeProject.links.website &&
-                    <li key={activeProject.links.website}>Website: <a href={activeProject.links.website} target="_blank" className="hover:underline cursor-pointer">{activeProject.links.website}</a></li>
-                  }
-                  {activeProject.links.github.length > 0 &&
-                    activeProject.links.github.map(url => <li key={url.link}><a href={url.link} target="_blank" className="hover:underline cursor-pointer">{url.text}</a></li>)
-                  }
-                </ul>
-              </>
-              }
-            </div>
-          </>
-          }
-          {!activeProject &&
-          <div className="text-2xl mt-10 mx-2">
-            <p className="mb-2 px-2 w-fit">Select a project to view its details</p>
-          </div>
-          }
+
+        <div className="
+        xs:display-none
+        sm:flex-1/14
+        md:flex-1/14
+        lg:flex-2/15
+        xl:flex-2/14
+        ">
         </div>
       </div>
     </main>
