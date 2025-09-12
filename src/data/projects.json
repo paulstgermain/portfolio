@@ -53,7 +53,7 @@
       "year": "2023",
       "techStack": ["React", "Ant Design", "Redux", "Node.js", "Express", "Okta", "PostgreSQL" ],
       "description": "An internal research tool built for Human Rights First & The Pat Finucane Centre to help them manage, analyze, and search through scanned physical documents related to human rights violations. As Full-Stack Team Lead, I led the team through the project lifecycle, from initial requirements gathering to deployment. Then I implemented final features and polish, and shipped the project.",
-      "shortBlurb": "Internal research tool enabling search an analysis of physical documents.",
+      "shortBlurb": "Internal research tool enabling search and analysis of physical documents.",
       "links": {
         "website": null,
         "github": [
