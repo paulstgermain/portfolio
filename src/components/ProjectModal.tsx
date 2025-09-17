@@ -39,7 +39,7 @@ export default function ProjectModal({  activeProject, setActiveProject }: Proje
             flex
             items-center
             justify-center
-            xs:h-4/12
+            xs:h-5/12
             sm:h-4/12
             md:h-5/12
             lg:h-11/12
@@ -62,7 +62,7 @@ export default function ProjectModal({  activeProject, setActiveProject }: Proje
             items-center
             justify-center
             py-5
-            xs:h-8/12
+            xs:h-7/12
             sm:h-8/12
             md:h-7/12
             lg:h-11/12
