@@ -11,10 +11,10 @@ export default function ContactForm() {
   return (
     <form className="
       font-istok-web
-      xs:w-70
-      sm:w-80
-      md:w-100
-      lg:w-135
+      xs:w-full
+      sm:w-70
+      md:w-80
+      lg:w-120
       xl:w-150
       p-5
       flex
@@ -24,8 +24,6 @@ export default function ContactForm() {
       md:text-lg
       lg:text-lg
       xl:text-xl
-      border-yellow
-      border-2
     " onSubmit={handleSubmit}>
 
       {/* Name field */}
