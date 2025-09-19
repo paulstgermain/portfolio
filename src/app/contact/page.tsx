@@ -38,7 +38,7 @@ export default function Contact() {
               />
             {': '}
             <a
-              href={process.env.NEXT_PUBLIC_LINKEDIN}
+              href={`https://www.${process.env.NEXT_PUBLIC_LINKEDIN}`}
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer hover:underline"
@@ -56,7 +56,7 @@ export default function Contact() {
               />
             {': '}
             <a
-              href={process.env.NEXT_PUBLIC_GITHUB}
+              href={`https://www.${process.env.NEXT_PUBLIC_GITHUB}`}
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer hover:underline"
