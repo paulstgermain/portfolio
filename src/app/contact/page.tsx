@@ -1,20 +1,63 @@
 import ContactForm from "@/components/ContactForm"
+import Image from "next/image"
 
 export default function Contact() {
   return (
     <main className="font-istok-web flex h-full text-primary">
       <div className="
+          flex
           flex-1/3
+          justify-center
+          items-center
           h-4/9
           sm:ml-10
           md:ml-10 
           lg:ml-14 
           xl:ml-16
           border-white border-2">
-        <h1>Contact Me:</h1>
-        <ul>
-          <li>Phone: (123) 456-7890</li>
-          <li>Email: 0V6Jz@example.com</li>
+        <ul className="
+          xs:text-[16px]
+          sm:text-lg
+          md:text-lg
+          lg:text-lg
+          xl:text-xl
+        ">
+          <li className="mb-2">
+            <Image
+              src="/svgs/InBug-White.svg"
+              alt="Music Note Icon"
+              width={24}
+              height={25}
+              className="inline w-[20px] h-[21px] sm:w-[24px] sm:h-[25px] md:w-[38px] md:h-[37px]"
+              />
+            {': '}
+            <a
+              href={process.env.NEXT_PUBLIC_LINKEDIN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:underline"
+            >
+              {`${process.env.NEXT_PUBLIC_LINKEDIN}`}
+            </a>
+          </li>
+          <li className="mb-2">
+            <Image
+              src="/svgs/github-mark-white.svg"
+              alt="Music Note Icon"
+              width={24}
+              height={25}
+              className="inline w-[20px] h-[21px] sm:w-[24px] sm:h-[25px] md:w-[38px] md:h-[37px]"
+              />
+            {': '}
+            <a
+              href={process.env.NEXT_PUBLIC_GITHUB}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:underline"
+            >
+              {`${process.env.NEXT_PUBLIC_GITHUB}`}
+            </a>
+          </li>
         </ul>
 
       </div>
