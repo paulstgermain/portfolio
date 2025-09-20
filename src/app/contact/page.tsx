@@ -64,6 +64,23 @@ export default function Contact() {
               {`${process.env.NEXT_PUBLIC_GITHUB}`}
             </a>
           </li>
+          <li className="mb-2">
+            <Image
+              src="/svgs/download.svg"
+              alt="Music Note Icon"
+              width={24}
+              height={25}
+              className="inline mb-2 w-[20px] h-[21px] sm:w-[24px] sm:h-[25px] md:w-[38px] md:h-[37px]"
+              />
+            {': '}
+            <a
+              href='/Paul_Resume_v1.pdf'
+              download='Paul_Resume_v1.pdf'
+              className="cursor-pointer hover:underline"
+            >
+              Download My Resume (Click here)
+            </a>
+          </li>
         </ul>
 
       </div>
