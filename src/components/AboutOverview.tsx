@@ -92,24 +92,19 @@ export default function AboutOverview() {
           ">
             <p className={`${overviewText}`}>
               Hi, I&apos;m Paul! I&apos;m a Software Engineer with 3 years of
-              focused experience using technology to build products
-              and solve problems for nonprofits and startups in the 
-              USA and the UK.
+              experience helping nonprofits and startups in the U.S. and U.K. build products that are reliable, scalable, and people-focused.
             </p>
             <p className={`${overviewText}`}>
-              As a 90&apos;s kid, the internet has always been my favorite place—my playground, library, and space for creative expression.
+              I work best where creativity meets problem-solving - whether that&apos;s refining a user interface for clarity, improving a backend flow for performance, or helping a small team ship features quickly without losing sight of quality. Colleagues know me for bringing curiosity, empathy, and integrity into my work, and for caring as much about the why behind a product as the how it gets built.
             </p>
             <p className={`${overviewText}`}>
-              That lifelong love evolved into a passion for web development, where I bring energy, curiosity, and a mission-driven mindset to every project. 
+              As a 90&apos;s kid, the internet has always been my playground, library, and creative outlet. That lifelong love evolved into a career in web development, where I thrive on injecting a little joy back into the online experience. 
             </p>
             <p className={`${overviewText}`}>
-              I thrive when I&apos;m using code to create positive change or inject some creativity and joy back into the online experience.
+              When I&apos;m not coding for work, I&apos;m usually coding for fun - experimenting with new frameworks, digging into internet nostalgia, or just hanging out with my cats and a good book.
             </p>
             <p className={`${overviewText}`}>
-              When I&apos;m not coding for work, I&apos;m coding for fun. I also enjoy digging into internet nostalgia, spending time with my cats, and reading.
-            </p>
-            <p className={`${overviewText}`}>
-              Here are some of things I currently like to build with:
+              Here are some of the tools I like to build with:
             </p>
             <ul className={`${overviewText} text-center list-inside`}>
               <li>{"<> "}React</li>
