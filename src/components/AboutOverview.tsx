@@ -92,7 +92,7 @@ export default function AboutOverview() {
           ">
             <p className={`${overviewText}`}>
               Hi, I&apos;m Paul! I&apos;m a Software Engineer with 3 years of
-              experience helping nonprofits and startups in the U.S. and U.K. build products that are reliable, scalable, and people-focused.
+              experience helping nonprofits and startups around the world build products that are reliable, scalable, and people-focused.
             </p>
             <p className={`${overviewText}`}>
               I work best where creativity meets problem-solving - whether that&apos;s refining a user interface for clarity, improving a backend flow for performance, or helping a small team ship features quickly without losing sight of quality. Colleagues know me for bringing curiosity, empathy, and integrity into my work, and for caring as much about the why behind a product as the how it gets built.
